@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,6 +15,36 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.pairings{
+  width: 80%;
+  height: 40px;
+  font-size: 23px;
+  text-align: center;
+  padding: 0px 30px;
+  margin: 10px auto;
+}
+
+.order-books{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.order-books div{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.order-books div > h1{
+  font-size: 48px;
+  font-weight: bold;
 }
 
 @keyframes App-logo-spin {
